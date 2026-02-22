@@ -6,7 +6,7 @@ Simple implementation of a  temperature sensor for a data center. Part of the to
 This proof of concept implementation use I2C sensor.
 * enable I2C on your PRi
 * setup properly the security
-* chceckout this repository and from the direcotry call GreenDIGIT-sensor call
+* chceckout this repository and from the direcotry GreenDIGIT-sensor call
 > docker compose up -d --build
 * try the sensor
 > wget http://IP:/api/greendigit/data
