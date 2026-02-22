@@ -1,0 +1,5 @@
+fastapi
+uvicorn
+adafruit-blinka
+adafruit-circuitpython-htu21d
+RPi.GPIO

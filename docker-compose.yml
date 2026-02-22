@@ -1,0 +1,14 @@
+services:
+  greendigit-sensor:
+    image: greendigit-sensor:latest
+    build: .
+    container_name: GreenDIGIT-sensor
+    restart: always
+    ports:
+      - "80:80"
+    # Map the physical I2C hardware to the container
+    devices:
+      - "/dev/i2c-1:/dev/i2c-1"
+    # Privileged mode ensures the Adafruit library can access GPIO memory on older Pis
+    privileged: true
+#    command: tail -f /dev/null
